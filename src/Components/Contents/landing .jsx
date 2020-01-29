@@ -1,9 +1,10 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import ReactTypingEffect from "react-typing-effect";
 import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import tiger from "../images/tiger.jpg";
-import "./landing.css";
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -11,16 +12,24 @@ const useStyles = makeStyles(theme => ({
     backgroundSize: "cover",
     margin: 0,
     width: "100%",
-    height: 710
+    height: 775
   },
   box: {
     height: "30%",
     width: "50%",
-    backgroundColor: "red",
-    paddingLeft: 30,
+    backgroundColor: "blue",
+    paddingLeft: 20,
     color: "white"
   }
 }));
+
+const ReactTypingEffectDemo = () => {
+  return (
+    <ReactTypingEffect
+      text={["It is a truth universally acknowledged, that a competent developer with possession of the innovative mind, must be in want of a job. \t - Pride and Programming -"]} speed={40} 
+    />
+  )
+}
 
 export default function Landing() {
   const classes = useStyles();
@@ -35,11 +44,7 @@ export default function Landing() {
         <Box className={classes.box}>
           <h1>Hello, I am Jaewoo Brandon Park</h1>
           <br></br>
-          <p>
-            “It is a truth universally acknowledged, that a competent developer
-            with possession of the innovative mind, must be in want of a
-            position”
-          </p>
+          <p>{ReactTypingEffectDemo()}</p>
         </Box>
       </Grid>
     </Grid>

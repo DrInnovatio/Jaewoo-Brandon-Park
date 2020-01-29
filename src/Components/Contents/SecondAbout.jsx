@@ -10,16 +10,15 @@ const useStyles = makeStyles(theme => ({
     flexGrow: 1,
     backgroundColor: "#f1f9f9",
     width: "100%",
-    height: 710,
-    margin: "0 auto",
-    backgroundColor: "green"
+    height: 775,
+    margin: "auto"
   },
   paper: {
     padding: theme.spacing(2),
     textAlign: "center",
     color: theme.palette.text.secondary,
-    marginTop: 10,
-    height: 300
+    marginTop: 50,
+    height: 360
   },
   paperGroup: {
     width: "90%",
@@ -29,12 +28,15 @@ const useStyles = makeStyles(theme => ({
     textAlign: "center",
     backgroundColor: "pink",
     paddingTop: 15,
-    fontSize: 55
+    fontSize: 55,
+    margin: "auto",
+    width: "100%"
   },
   face: {
     width: 160,
     height: 160,
-    margin: "auto"
+    margin: "auto",
+    marginTop: 30
   }
 }));
 

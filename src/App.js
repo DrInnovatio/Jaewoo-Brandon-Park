@@ -3,10 +3,7 @@ import Landing from './Components/Contents/landing ';
 import SecondAbout from './Components/Contents/SecondAbout';
 import ThirdPortfolio from './Components/Contents/ThirdPortfolio';
 import FourthContact from './Components/Contents/FourthContact';
-import { Header, Footer } from './Components/Layouts';
-import FixedContainer from "./Components/Contents/landing ";
-
-
+import { Footer } from './Components/Layouts';
 
 
 export default class  App extends Component {
