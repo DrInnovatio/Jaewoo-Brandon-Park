@@ -1,9 +1,9 @@
-import React from "react";
-import GridListTile from "@material-ui/core/GridListTile";
-import { makeStyles } from "@material-ui/core/styles";
-import GridList from "@material-ui/core/GridList";
-import Paper from "@material-ui/core/Paper";
-import Grid from "@material-ui/core/Grid";
+import React from "./node_modules/react";
+import GridListTile from "./node_modules/@material-ui/core/GridListTile";
+import { makeStyles } from "./node_modules/@material-ui/core/styles";
+import GridList from "./node_modules/@material-ui/core/GridList";
+import Paper from "./node_modules/@material-ui/core/Paper";
+import Grid from "./node_modules/@material-ui/core/Grid";
 import tileData from "./tileData";
 
 const useStyles = makeStyles(theme => ({
@@ -14,8 +14,8 @@ const useStyles = makeStyles(theme => ({
     width: "100%"
   },
   gridList: {
-    width: 500,
-    height: 400,
+    width: "90%",
+    height: 500,
     marginTop: 30,
     paddingLeft: 50
   },

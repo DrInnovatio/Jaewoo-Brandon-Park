@@ -1,13 +1,14 @@
-import React from "react";
-import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
-import Tabs from "@material-ui/core/Tabs";
-import Tab from "@material-ui/core/Tab";
+import React from "./node_modules/react";
+import { makeStyles } from "./node_modules/@material-ui/core/styles";
+import Paper from "./node_modules/@material-ui/core/Paper";
+import Tabs from "./node_modules/@material-ui/core/Tabs";
+import Tab from "./node_modules/@material-ui/core/Tab";
 
 const useStyles = makeStyles({
   root: {
     flexGrow: 1,
-    width: "100%"
+    position: "fixed",
+    width: "99%"
   }
 });
 
