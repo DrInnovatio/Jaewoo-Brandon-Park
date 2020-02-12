@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  /* box-sizing: border-box; */
 }
 
 .slider {
@@ -37,9 +37,12 @@ nav {
   font-size: 18px;
 }
 
-button {
+.button {
   position: absolute;
-  margin-left: 50%;
+
+  margin-top: 20px;
+  margin-left: 43%;
+  width: 15%;
 }
 
 .headline {

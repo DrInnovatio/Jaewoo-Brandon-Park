@@ -1,10 +1,11 @@
-import React from "./node_modules/react";
-import GridListTile from "./node_modules/@material-ui/core/GridListTile";
-import { makeStyles } from "./node_modules/@material-ui/core/styles";
-import GridList from "./node_modules/@material-ui/core/GridList";
-import Paper from "./node_modules/@material-ui/core/Paper";
-import Grid from "./node_modules/@material-ui/core/Grid";
+import React from "react";
+import GridListTile from "@material-ui/core/GridListTile";
+import { makeStyles } from "@material-ui/core/styles";
+import GridList from "@material-ui/core/GridList";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
 import tileData from "./tileData";
+import Slide from "./Slide";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -30,7 +31,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function ImageGridList() {
+function ImageGridList() {
   const classes = useStyles();
 
   return (
@@ -38,7 +39,7 @@ export default function ImageGridList() {
       <div>
         <h1 className={classes.h1}>PORTFOLIO</h1>
       </div>
-      <Grid container spacing={3}>
+      {/* <Grid container spacing={3}>
         <Grid item xs={12} sm={6}>
           <GridList cellHeight={200} className={classes.gridList} cols={3}>
             {tileData.map(tile => (
@@ -47,6 +48,11 @@ export default function ImageGridList() {
               </GridListTile>
             ))}
           </GridList>
+        </Grid> */}
+
+      <Grid container spacing={3}>
+        <Grid item xs={12} sm={6}>
+          <Slide />
         </Grid>
 
         <Grid item xs={12} sm={6}>
@@ -56,3 +62,5 @@ export default function ImageGridList() {
     </div>
   );
 }
+
+export default ImageGridList;

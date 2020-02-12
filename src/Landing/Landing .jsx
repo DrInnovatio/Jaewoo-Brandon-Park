@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import Button from "@material-ui/core/Button";
 import "./landing.css";
 //import { Tween, Timeline } from "react-gsap";
 //import gsap, { Power2 } from "gsap";
@@ -69,7 +70,7 @@ function Landing() {
   }, []);
   return (
     <header>
-      <nav>Jaewoo Brandon Park</nav>
+      <nav></nav>
       <section>
         <div ref={el => (main = el)} className="main">
           <img src={tiger4} alt="" />
@@ -83,9 +84,13 @@ function Landing() {
           </div>
         </div>
       </section>
-      <button className="btn" type="button">
-        Go Down
-      </button>
+      <Button
+        style={{ marginLeft: "44%" }}
+        variant="outlined"
+        color="secondary"
+      >
+        Let's Go Down
+      </Button>
       <div ref={el => (slider = el)} className="slider"></div>
     </header>
   );
