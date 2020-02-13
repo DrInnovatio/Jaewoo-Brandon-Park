@@ -3,9 +3,10 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
+import Fade from "react-reveal/Fade";
+import Zoom from "react-reveal/Roll";
 //import tileData from "./tileData";
 import Slide from "./Slide";
-import Zoom from "react-reveal/Roll";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
 //React-fade is used for a short animation.
@@ -34,36 +35,29 @@ function ImageGridList() {
   const classes = useStyles();
 
   return (
-    <div className={classes.root}>
-      {/* <Grid container spacing={3}>
-        <Grid item xs>
-          <Paper style={{ backgroundColor: "blue" }} className={classes.paper}>
-            xs
-          </Paper>
-        </Grid> */}
-      <Grid item xs={12}>
-        <Zoom left>
-          <h1 className={classes.h1}>PORTFOLIO</h1>
-        </Zoom>
+    <Grid item xs={12} className={classes.root}>
+      <Zoom left>
+        <h1 className={classes.h1}>PORTFOLIO</h1>
+      </Zoom>
 
-        <div style={{ margin: "30px auto auto" }}>
-          <Slide />
-        </div>
+      <div>
+        <Slide />
+      </div>
 
-        <div
-          style={{
-            marginTop: "450px",
-            marginLeft: "auto",
-            marginRight: "auto",
-            backgroundColor: "white",
-            position: "relative",
-            width: "15%",
-            textAlign: "center"
-          }}>
-          <ArrowUpwardIcon />
-          <span>CLICK THE WINDOW</span>
-        </div>
-
+      <div
+        style={{
+          marginTop: "450px",
+          marginLeft: "auto",
+          marginRight: "auto",
+          backgroundColor: "white",
+          position: "relative",
+          width: "15%",
+          textAlign: "center"
+        }}>
+        <ArrowUpwardIcon />
+        <span>CLICK THE WINDOW</span>
+      </div>
+      <Fade bottom>
         <p
           style={{
             marginTop: "40px",
@@ -76,15 +70,8 @@ function ImageGridList() {
           projects yet. Hopefully, it will happen to me soon. <br />
           This section is just to show my React programming skill.
         </p>
-      </Grid>
-
-      {/* <Grid item xs>
-          <Paper style={{ backgroundColor: "blue" }} className={classes.paper}>
-            xs
-          </Paper>
-        </Grid> 
-      </Grid>*/}
-    </div>
+      </Fade>
+    </Grid>
   );
 }
 
