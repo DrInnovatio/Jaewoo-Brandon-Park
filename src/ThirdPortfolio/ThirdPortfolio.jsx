@@ -1,28 +1,27 @@
 import React from "react";
-import GridListTile from "@material-ui/core/GridListTile";
+//import GridListTile from "@material-ui/core/GridListTile";
 import { makeStyles } from "@material-ui/core/styles";
-import GridList from "@material-ui/core/GridList";
 import Paper from "@material-ui/core/Paper";
 import Grid from "@material-ui/core/Grid";
-import tileData from "./tileData";
+//import tileData from "./tileData";
 import Slide from "./Slide";
+import Zoom from "react-reveal/Roll";
+import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+
+//React-fade is used for a short animation.
 
 const useStyles = makeStyles(theme => ({
   root: {
     display: "grid",
     backgroundColor: "#d3fcc0",
-    height: 775,
-    width: "100%"
+    height: "100%",
+    width: "100%",
+    zIndex: 0
   },
-  gridList: {
-    width: "90%",
-    height: 500,
-    marginTop: 30,
-    paddingLeft: 50
-  },
+
   h1: {
     textAlign: "center",
-    paddingTop: 40
+    margin: "20px auto"
   },
   paper: {
     padding: theme.spacing(2),
@@ -36,29 +35,55 @@ function ImageGridList() {
 
   return (
     <div className={classes.root}>
-      <div>
-        <h1 className={classes.h1}>PORTFOLIO</h1>
-      </div>
       {/* <Grid container spacing={3}>
-        <Grid item xs={12} sm={6}>
-          <GridList cellHeight={200} className={classes.gridList} cols={3}>
-            {tileData.map(tile => (
-              <GridListTile key={tile.img} cols={tile.cols || 1}>
-                <img src={tile.img} alt={tile.title} />
-              </GridListTile>
-            ))}
-          </GridList>
+        <Grid item xs>
+          <Paper style={{ backgroundColor: "blue" }} className={classes.paper}>
+            xs
+          </Paper>
         </Grid> */}
+      <Grid item xs={12}>
+        <Zoom left>
+          <h1 className={classes.h1}>PORTFOLIO</h1>
+        </Zoom>
 
-      <Grid container spacing={3}>
-        <Grid item xs={12} sm={6}>
+        <div style={{ margin: "30px auto auto" }}>
           <Slide />
-        </Grid>
+        </div>
 
-        <Grid item xs={12} sm={6}>
-          <Paper className={classes.paper}>xs=12 sm=6</Paper>
-        </Grid>
+        <div
+          style={{
+            marginTop: "450px",
+            marginLeft: "auto",
+            marginRight: "auto",
+            backgroundColor: "white",
+            position: "relative",
+            width: "15%",
+            textAlign: "center"
+          }}>
+          <ArrowUpwardIcon />
+          <span>CLICK THE WINDOW</span>
+        </div>
+
+        <p
+          style={{
+            marginTop: "40px",
+            marginLeft: "auto",
+            marginRight: "auto",
+            backgroundColor: "pink",
+            textAlign: "center"
+          }}>
+          As I am still a newbie developer, I have NOT done these kinds of
+          projects yet. Hopefully, it will happen to me soon. <br />
+          This section is just to show my React programming skill.
+        </p>
       </Grid>
+
+      {/* <Grid item xs>
+          <Paper style={{ backgroundColor: "blue" }} className={classes.paper}>
+            xs
+          </Paper>
+        </Grid> 
+      </Grid>*/}
     </div>
   );
 }

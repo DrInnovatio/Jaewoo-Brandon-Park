@@ -1,4 +1,3 @@
-import { render } from "react-dom";
 import React, { useState, useCallback } from "react";
 import { useTransition, animated } from "react-spring";
 import "./Slide.css";
@@ -14,12 +13,15 @@ const pages = [
     <animated.div style={{ ...style, background: "lightgreen" }}>
       C
     </animated.div>
+  ),
+  ({ style }) => (
+    <animated.div style={{ ...style, background: "gray" }}>D</animated.div>
   )
 ];
 
 function Slide() {
   const [index, set] = useState(0);
-  const onClick = useCallback(() => set(state => (state + 1) % 3), []);
+  const onClick = useCallback(() => set(state => (state + 1) % 4), []);
   const transitions = useTransition(index, p => p, {
     from: { opacity: 0, transform: "translate3d(100%,0,0)" },
     enter: { opacity: 1, transform: "translate3d(0%,0,0)" },

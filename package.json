@@ -23,6 +23,7 @@
     "react-flipcard": "^0.2.1",
     "react-fluid-animation": "^1.0.1",
     "react-gsap": "^1.2.0",
+    "react-reveal": "^1.2.2",
     "react-scripts": "3.3.0",
     "react-spring": "^8.0.27",
     "react-typing-effect": "^2.0.2",
