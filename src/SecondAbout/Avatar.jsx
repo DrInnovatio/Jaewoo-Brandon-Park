@@ -10,7 +10,8 @@ const useStyles = makeStyles(theme => ({
       margin: theme.spacing(1),
       width: "100px",
       height: "100px",
-      marginLeft: "45%"
+      marginLeft: "47%",
+      marginTop: "10px"
     }
   }
 }));

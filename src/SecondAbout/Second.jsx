@@ -1,13 +1,20 @@
-import React, { useState } from "react";
+import React from "react";
 import Grid from "@material-ui/core/Grid";
 import Cards from "./Cards";
 import ImageAvatar from "./Avatar";
+import Zoom from "react-reveal/Zoom";
+import Flip from "react-reveal/Flip";
+import "./Second.css";
 
 function Card() {
   return (
     <div>
-      <h1>About Me</h1>
-      <ImageAvatar />
+      <Zoom top>
+        <h1 className="about">About Me</h1>
+      </Zoom>
+      <Flip>
+        <ImageAvatar />
+      </Flip>
 
       <Grid container spacing={1}>
         <Grid item xs={6} sm={3}>

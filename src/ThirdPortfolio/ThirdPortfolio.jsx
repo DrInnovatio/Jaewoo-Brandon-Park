@@ -9,7 +9,7 @@ import Zoom from "react-reveal/Roll";
 import Slide from "./Slide";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
 
-//React-fade is used for a short animation.
+//https://www.react-reveal.com/examples/
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -36,6 +36,7 @@ function ImageGridList() {
 
   return (
     <Grid item xs={12} className={classes.root}>
+
       <Zoom left>
         <h1 className={classes.h1}>PORTFOLIO</h1>
       </Zoom>
