@@ -1,6 +1,7 @@
 <<<<<<< HEAD
 # Jaewoo-Brandon-Park
-This project is to create my personal website.
+### This project is to create my personal website and still in progress
+
 =======
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
