@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import Button from "@material-ui/core/Button";
+import LightSpeed from "react-reveal/LightSpeed";
 import "./landing.css";
 
 //import { Tween, Timeline } from "react-gsap";
@@ -71,7 +72,9 @@ function Landing() {
   }, []);
   return (
     <header>
-      <nav></nav>
+      <nav>
+        <LightSpeed right>The Fast Learner</LightSpeed>
+      </nav>
       <section>
         <div ref={el => (main = el)} className="main">
           <img src={tiger4} alt="" />
@@ -86,10 +89,9 @@ function Landing() {
         </div>
       </section>
       <Button
-        style={{ marginLeft: "44%" }}
+        style={{ marginLeft: "45%", marginTop: "5px" }}
         variant="outlined"
-        color="secondary"
-      >
+        color="secondary">
         Let's Go Down
       </Button>
       <div ref={el => (slider = el)} className="slider"></div>

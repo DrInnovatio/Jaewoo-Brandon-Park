@@ -1,12 +1,12 @@
-import React from "./node_modules/react";
-import LinkedInIcon from "./node_modules/@material-ui/icons/LinkedIn";
-import GitHubIcon from "./node_modules/@material-ui/icons/GitHub";
-import TextField from "./node_modules/@material-ui/core/TextField";
-import { makeStyles } from "./node_modules/@material-ui/core/styles";
-import Button from "./node_modules/@material-ui/core/Button";
-import Form from "./node_modules/react-bootstrap/Form";
-import Paper from "./node_modules/@material-ui/core/Paper";
-import Grid from "./node_modules/@material-ui/core/Grid";
+import React from "react";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
+import GitHubIcon from "@material-ui/icons/GitHub";
+import TextField from "@material-ui/core/TextField";
+import { makeStyles } from "@material-ui/core/styles";
+import Button from "@material-ui/core/Button";
+import Form from "react-bootstrap/Form";
+import Paper from "@material-ui/core/Paper";
+import Grid from "@material-ui/core/Grid";
 
 const useStyles = makeStyles(theme => ({
   root: {

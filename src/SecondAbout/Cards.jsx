@@ -12,11 +12,11 @@ function Card() {
   return (
     <div onClick={() => set(state => !state)}>
       <a.div
-        class="c back"
+        class="c front"
         style={{ opacity: opacity.interpolate(o => 1 - o), transform }}
       />
       <a.div
-        class="c front"
+        class="c back"
         style={{
           opacity,
           transform: transform.interpolate(t => `${t} rotateX(180deg)`)
