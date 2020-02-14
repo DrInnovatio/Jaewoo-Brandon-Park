@@ -5,8 +5,7 @@ body {
   width: 100%;
   overflow: hidden;
   user-select: none;
-  background: #f0f0f0;
-  background-color: #636161;
+  background-color: #ccc9c9;
 }
 
 .c {

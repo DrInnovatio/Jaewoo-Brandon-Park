@@ -1,8 +1,6 @@
 import React, { useEffect, useRef } from "react";
-import Button from "@material-ui/core/Button";
-import LightSpeed from "react-reveal/LightSpeed";
+//import LightSpeed from "react-reveal/LightSpeed";
 import "./landing.css";
-
 //import { Tween, Timeline } from "react-gsap";
 //import gsap, { Power2 } from "gsap";
 //import { makeStyles } from "@material-ui/core/styles";
@@ -11,6 +9,7 @@ import ReactTypingEffect from "react-typing-effect";
 // import Grid from "@material-ui/core/Grid";
 // import Box from "@material-ui/core/Box";
 import tiger4 from "./tiger4.jpg";
+import NavBar from "./Nav";
 
 const ReactTypingEffectDemo = () => {
   return (
@@ -73,7 +72,7 @@ function Landing() {
   return (
     <header>
       <nav>
-        <LightSpeed right>The Fast Learner</LightSpeed>
+        <NavBar />
       </nav>
       <section>
         <div ref={el => (main = el)} className="main">
@@ -84,16 +83,10 @@ function Landing() {
             <span ref={el => (logo = el)} id="logo">
               _[Web Developer]
             </span>
-            <p>{ReactTypingEffectDemo()}</p>
+            <p style={{ marginTop: "10px" }}>{ReactTypingEffectDemo()}</p>
           </div>
         </div>
       </section>
-      <Button
-        style={{ marginLeft: "45%", marginTop: "5px" }}
-        variant="outlined"
-        color="secondary">
-        Let's Go Down
-      </Button>
       <div ref={el => (slider = el)} className="slider"></div>
     </header>
   );
