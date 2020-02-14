@@ -1,15 +1,13 @@
 import React, { Component } from "react";
-//import Landing from "./Landing/Landing ";
-import Card from "./SecondAbout/Second";
-//import ImageGridList from "./ThirdPortfolio/ThirdPortfolio";
-//import FourthContact from "./FourthContact/FourthContact";
+
+//import Landing from "./First/Landing ";
+//import SecondMainApp from "./Second/SecondMainApp";
+
+//import ImageGridList from "./Third/ThirdPortfolio";
+import FourthContact from "./Fourth/FourthContact";
 
 export default class App extends Component {
   render() {
-    return (
-      <div>
-        <Card />
-      </div>
-    );
+    return <FourthContact></FourthContact>;
   }
 }

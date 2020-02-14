@@ -4,9 +4,9 @@ import Cards from "./Cards";
 import ImageAvatar from "./Avatar";
 import Zoom from "react-reveal/Zoom";
 import Flip from "react-reveal/Flip";
-import "./Second.css";
+import "./SecondMainApp.css";
 
-function Card() {
+function SecondMainApp() {
   return (
     <div>
       <Zoom top>
@@ -37,4 +37,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default SecondMainApp;
