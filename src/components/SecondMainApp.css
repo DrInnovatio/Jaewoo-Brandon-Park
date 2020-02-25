@@ -1,0 +1,23 @@
+
+	
+.c {
+	position: absolute;
+	width: 300px;
+	height: 420px;
+	cursor: pointer;
+	will-change: transform, opacity;
+}
+
+.front,
+.back {
+	background-size: cover;
+}
+
+.front {
+	background-image: url("../images/newY.png");
+}
+
+.back {
+	background-image: url(https://images.unsplash.com/photo-1544511916-0148ccdeb877?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1901&q=80i&auto=format&fit=crop);
+}
+
