@@ -1,29 +1,50 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
+import CenteredTabs from "./Navbar";
 import Fade from "react-reveal/Fade";
 import Zoom from "react-reveal/Roll";
 import Slide from "./Slide";
 import ArrowUpwardIcon from "@material-ui/icons/ArrowUpward";
+
 
 //https://www.react-reveal.com/examples/
 
 const useStyles = makeStyles(theme => ({
 	root: {
 		display: "grid",
-		height: "100%",
-		width: "100%",
-		zIndex: 0
+		margin: "auto",
+		background: "#ad5389", 
+		background: "-webkit-linear-gradient(to right, #3c1053, #ad5389) " ,
+		background: "linear-gradient(to right, #3c1053, #ad5389)"
 	},
 
 	h1: {
 		textAlign: "center",
-		margin: "20px auto"
+		margin: "1% auto",
+		fontFamily: 'Montserrat', 
+		color:"#e9e1cc"
 	},
-	paper: {
-		padding: theme.spacing(2),
+
+	arrow:{
+		margin: "32% auto 15px",
+		position: "relative",
+		width: "15%",
 		textAlign: "center",
-		color: theme.palette.text.secondary
+		color:"#e9e1cc",
+		background: "#c94b4b",
+		background: "-webkit-linear-gradient(to right, #4b134f, #c94b4b)",
+		background: "linear-gradient(to right, #4b134f, #c94b4b)"
+
+	},
+	explain:{
+		margin: "3% auto",
+		padding: "1% 5%",
+		color:"#e9e1cc",
+		textAlign: "center",
+		background: "#c94b4b",
+		background: "-webkit-linear-gradient(to right, #4b134f, #c94b4b)",
+		background: "linear-gradient(to right, #4b134f, #c94b4b)"
 	}
 }));
 
@@ -32,6 +53,7 @@ function ImageGridList() {
 
 	return (
 		<Grid item xs={12} className={classes.root} id="portfolio">
+			<CenteredTabs/>
 			<Zoom left>
 				<h1 className={classes.h1}>PORTFOLIO</h1>
 			</Zoom>
@@ -40,28 +62,12 @@ function ImageGridList() {
 				<Slide />
 			</div>
 
-			<div
-				style={{
-					marginTop: "450px",
-					marginLeft: "auto",
-					marginRight: "auto",
-					backgroundColor: "white",
-					position: "relative",
-					width: "15%",
-					textAlign: "center"
-				}}>
+			<div className={classes.arrow}>
 				<ArrowUpwardIcon />
 				<span>CLICK THE WINDOW</span>
 			</div>
 			<Fade bottom>
-				<p
-					style={{
-						marginTop: "40px",
-						marginLeft: "auto",
-						marginRight: "auto",
-						backgroundColor: "pink",
-						textAlign: "center"
-					}}>
+				<p className={classes.explain}>
 					As I am still a newbie developer, I have NOT done these kinds of
 					projects yet. Hopefully, it will happen to me soon. <br />
 					This section is just to show my React programming skill.

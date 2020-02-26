@@ -3,14 +3,15 @@
 //import LightSpeed from "react-reveal/LightSpeed";
 //import { Tween, Timeline } from "react-gsap";
 //import gsap, { Power2 } from "gsap";
+//import Breadcrumbs from "@material-ui/core/Breadcrumbs";
+//import { Link } from "react-scroll";
 import React, { useEffect, useRef } from "react";
-import Breadcrumbs from "@material-ui/core/Breadcrumbs";
 import "./landing.css";
 import { makeStyles } from "@material-ui/core/styles";
 import TweenMax, { Power2 } from "gsap";
 import ReactTypingEffect from "react-typing-effect";
-import { Link } from "react-scroll";
 import tiger4 from "../images/tiger4.jpg";
+import CenteredTabs from "./Navbar";
 
 
 
@@ -35,49 +36,49 @@ const useStyles = makeStyles(theme => ({
 	}
 }));
 
-function NavBar() {
-	const classes = useStyles();
-	return (
-		<Breadcrumbs className={classes.nav} aria-label="breadcrumb">
-			<Link
-				activeClass="active"
-				to="home"
-				spy={true}
-				smooth={true}
-				offset={-70}
-				duration={500}>
-				Home
-			</Link>
-			<Link
-				activeClass="active"
-				to="aboutMe"
-				spy={true}
-				smooth={true}
-				offset={-70}
-				duration={500}>
-				About Me
-			</Link>
-			<Link
-				activeClass="active"
-				to="portfolio"
-				spy={true}
-				smooth={true}
-				offset={-70}
-				duration={500}>
-				Portfolio
-			</Link>
-			<Link
-				activeClass="active"
-				to="contact"
-				spy={true}
-				smooth={true}
-				offset={-70}
-				duration={500}>
-				Contact
-			</Link>
-		</Breadcrumbs>
-	);
-}
+// function NavBar() {
+// 	const classes = useStyles();
+// 	return (
+// 		<Breadcrumbs className={classes.nav} aria-label="breadcrumb">
+// 			<Link
+// 				activeClass="active"
+// 				to="home"
+// 				spy={true}
+// 				smooth={true}
+// 				offset={-70}
+// 				duration={500}>
+// 				Home
+// 			</Link>
+// 			<Link
+// 				activeClass="active"
+// 				to="aboutMe"
+// 				spy={true}
+// 				smooth={true}
+// 				offset={-70}
+// 				duration={500}>
+// 				About Me
+// 			</Link>
+// 			<Link
+// 				activeClass="active"
+// 				to="portfolio"
+// 				spy={true}
+// 				smooth={true}
+// 				offset={-70}
+// 				duration={500}>
+// 				Portfolio
+// 			</Link>
+// 			<Link
+// 				activeClass="active"
+// 				to="contact"
+// 				spy={true}
+// 				smooth={true}
+// 				offset={-70}
+// 				duration={500}>
+// 				Contact
+// 			</Link>
+// 		</Breadcrumbs>
+// 	);
+// }
 
 function Landing() {
 	let main = useRef(null);
@@ -130,7 +131,7 @@ function Landing() {
 		<div className="body" id="home ">
 			<header>
 				<nav>
-					<NavBar />
+					<CenteredTabs/>
 				</nav>
 				<section>
 					<div ref={el => (main = el)} className="main">
